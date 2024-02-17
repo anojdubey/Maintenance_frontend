@@ -1,0 +1,26 @@
+
+.container {
+    align-items: center;
+    margin: -8px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: larger;
+    font-weight: 800;
+    width: 100%;
+    height: 5rem;
+    padding: 0;
+    background-color: aqua;
+    margin: 0;
+}
+.nav-text{
+    font-size: large;
+    color: rgb(6, 75, 34);
+    
+}
+.nav-text:hover{
+    cursor: pointer;
+}

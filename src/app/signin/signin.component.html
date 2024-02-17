@@ -1,0 +1,23 @@
+
+<main>
+    <div class="container">
+      <div class="form-container">
+        <form (ngSubmit)="onFormSubmit()" [formGroup]="signupForm" class="form-style">
+          <h3 class="form-title">Login</h3>
+          <div class="input-style">
+            <label for="uname">User Name</label>
+            <input type="text" name="uname" id="uname" formControlName="name" placeholder="Enter Username"/>
+          </div>
+          <div class="input-style">
+            <label for="pass">Password</label>
+            <input type="password" name="pass" id="pass" formControlName="password" ngModel placeholder="Enter Password"/>
+          </div>
+          <div class="button-style">
+            <button style="background-color: black; color: aliceblue; border-radius: 5px; padding: 7px; font-size: medium;" type="submit">SUBMIT</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+  
+  <router-outlet />
