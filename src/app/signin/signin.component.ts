@@ -26,7 +26,7 @@ export class SigninComponent implements OnInit{
       headers:{
         'Content-type':"application/json"
       },
-      body:this.signupForm.value
+      body:JSON.stringify(this.signupForm.value)
     })
     const data = await res.json();
     console.log(data)
